@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="add-todo-wrap">
+        <button class="open-todo-form" id="myBtn">Add Todo</button>
+    </div>
+
+    <div class="append-todos"></div>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="form-container">
+              <div class="title">
+              Title of the task<br>
+              <input type="text" id="title" maxlength="41" placeholder="Enter what to do" name="title" required>
+              </div>
+
+              <div class="description">
+                Description of the task<br>
+                <input type="textarea" id="description" maxlength="41" placeholder="Thehe description of the task" name="title" required>
+                </div>
+
+                <div class="date">
+                    Due date <br>
+                    <input type="date" id="dueDate">
+                </div>
+
+                <div class="priority">
+                    Priority <br>
+                    <!-- <div class="priority-wrap">
+                        <input type="radio" name="priority" id="low" value="low" checked>
+                        <label for="low"><b>Low</b></label>
+            
+                        <input type="radio" name="priority" id="high" value="high">
+                        <label for="high"><b>High</b></label>
+                        </div> -->
+
+                        <select id="priority">
+                            <option value="low">Low</option>
+                            <option selected value="medium">Medium</option>
+                            <option value="high">High</option>                        
+                          </select>
+                </div>
+              
+                   <div class="add-btn-div">
+                      <button class="add-todo">Add Task</button>
+                    </div>
+          </div>
+      </div>
+      
+      </div>
+
+    <script src="/src/index.js" type="module"></script>
+</body>
+</html>
